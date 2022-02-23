@@ -36,9 +36,10 @@ public class Lesson04Ex01Controller {
 			// required=false =>>>> null 값이 들어올 수 있다
 	) {
 		// insert DB
+		userBO.insertUser(name, yyyymmdd, email, introduce);
 		
 		// 결과 jsp
-		return "lesson04/after_add_user" + userBO.getUser(name, yyyymmdd, email, introduce); // 결과 jsp 경로
+		return "lesson04/after_add_user"; // 결과 jsp 경로
 		// 파라미터 값이 잘 나왔는지 확인 -> 위에 줄에 break point 걸기
 	}
 }

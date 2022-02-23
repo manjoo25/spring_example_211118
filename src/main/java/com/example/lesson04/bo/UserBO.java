@@ -11,7 +11,7 @@ public class UserBO {
 	@Autowired
 	private UserDAO userDAO;
 	
-	public String getUser(String name, String yyyymmdd, String email, String introduce) {
-		return userDAO.insertUser(name, yyyymmdd, email, introduce);
+	public void insertUser(String name, String yyyymmdd, String email, String introduce) {
+		userDAO.insertUser(name, yyyymmdd, email, introduce);
 	}
 }
