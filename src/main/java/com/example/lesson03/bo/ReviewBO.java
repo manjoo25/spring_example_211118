@@ -27,4 +27,9 @@ public class ReviewBO {
 	public int addReviewAsField(int storeId, String menu, String userName, double point, String review) {
 		return reviewDAO.insertReviewAsField(storeId, menu, userName, point, review);
 	}
+	
+	// UPDATE
+	public int updateReviewById(int id, String review) {
+		return reviewDAO.updateReviewById(id, review);
+	}
 }
