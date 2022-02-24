@@ -2,7 +2,7 @@ package com.example.lesson04.model;
 
 import java.util.Date;
 
-public class NewUser {
+public class User {
 
 	private int id;
 	private String name;
