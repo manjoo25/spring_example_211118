@@ -1,6 +1,7 @@
 package com.example.lesson05;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -50,4 +51,22 @@ public class Lesson05Controller {
 		
 		return "lesson05/ex02";
 	}
+	
+	// 요청 URL : http://localhost:8080/lesson05/ex03
+	@RequestMapping("/lesson05/ex03")
+	
+	public String ex03(Model model) {
+		Date today = new Date();
+		model.addAttribute("today", today);
+		
+		return "lesson05/ex03";
+	}
+	
+	// 요청 URL : http://localhost:8080/lesson05/ex04
+		@RequestMapping("/lesson05/ex04")
+		
+		public String ex04(Model model) {
+			return "lesson05/ex04";
+		}
+	
 }
